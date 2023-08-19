@@ -1,1 +1,29 @@
+# 设置spring security 默认用户名密码
+spring:
+  security:
+    user:
+      name: admin
+      password: 123456
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 34c79343c07b98c7ec99
+            client-secret: ebfc2f094cbd055fde071450a50118763f754c08
+            redirect-uri: http://localhost:8080/login/oauth2/code/github
+          # https://console.cloud.google.com/apis/credentials
+#          google:
+#            client-id: 646240864809-ivvcgato79m59qmvmbm4a0bbmmp71pk2.apps.googleusercontent.com
+#            client-secret: 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
+#            redirect-uri: http://localhost:8080/login/oauth2/code/google
+#          gitee:
+#            client-id: 449a308f04a30dd10f04552d162c455ee552e26c294dfd43b27c58ca1f4454d9
+#            client-secret: afd90fecd14b3a6f7b2d57b04bda42ca60f5f00579f7de4f8d3867ef8876d3e9
+#            scope:
+#              - emails
+#              - projects
+#            redirect-uri: http://localhost:8080/login/oauth2/code/gitee
+
+server:
+  port: 8080
 
